@@ -18,9 +18,7 @@ function sendTelegramMessage(request, response){
 
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
-    const message = `Request Type : ${request.method} \n
-                       Request URL : ${request.url} \n
-                       Request Body : ${JSON.stringify(request.body)}`;
+    const message = `Request Type : ${request.method} \nRequest URL : ${request.url} \nRequest Body : ${JSON.stringify(request.body)}`;
     const payload = {
         chat_id: chatId,
         text: message
