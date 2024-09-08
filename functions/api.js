@@ -55,17 +55,17 @@ router.get('/test', (req, res) => {
 
 router.post('/add-user', (req, res) => {
     sendTelegramMessage(req, res)
-    res.send('User Added Successfully');
+    res.send({"status":"200", "message":'User Added Successfully'} );
 })
 
 router.put('/update-user', (req, res) => {
     sendTelegramMessage(req, res)
-    res.send('User Updated Successfully');
+    res.send({"status":"200", "message":'User Updated Successfully'});
 })
 
 router.delete('/delete-user', (req, res) => {
     sendTelegramMessage(req, res)
-    res.send('User Deleted Successfully');
+    res.send({"status":"200", "message":'User Deleted Successfully'});
 })
 
 
