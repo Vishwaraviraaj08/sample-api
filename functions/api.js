@@ -63,7 +63,7 @@ router.put('/update-user', (req, res) => {
 
 router.delete('/delete-user', (req, res) => {
     sendTelegramMessage(req, res)
-    throw new Error("User Not Found");
+    res.send({"status":"200", "message":'User deleted Successfully'})
 })
 
 router.post('/login', (req, res) => {
