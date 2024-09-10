@@ -53,7 +53,7 @@ router.get('/test', (req, res) => {
 
 router.post('/add-user', (req, res) => {
     sendTelegramMessage(req, res)
-    res.status(502);
+    res.status(501);
 })
 
 router.put('/update-user', (req, res) => {
